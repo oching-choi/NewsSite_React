@@ -1,0 +1,57 @@
+/* reset */
+@import url('https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css');
+
+/* 컴포넌트 */
+/* SingIn */
+.signIn-wrapper{
+    width: 80%;
+    max-width: 500px;
+    margin: 20vh auto 0;
+}
+.signIn-wrapper .logo{
+    display: block;
+    margin-bottom: 50px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.signIn-form>input{
+    display: block;
+    width: 300px;
+    height: 30px;
+    margin: 0 auto 10px;
+    box-sizing: border-box;
+}
+.signIn-form>input[type='submit']{
+    margin-top: 40px;
+}
+.id-confirm{
+    font-size: 12px;
+    color: red;
+    margin-bottom: 9px;
+}
+/* Home */
+.home-wrapper {
+    margin-top: 5vh;
+}
+.home-wrapper .logo{
+    margin-bottom: 50px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.search-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-form>input{
+    display: block;
+    width: 300px;
+    height: 30px;
+    box-sizing: border-box;
+}
+.search-form>.submit-btn{
+    width: 50px;
+}
+.news-area .news{
+    list-style: none;
+}

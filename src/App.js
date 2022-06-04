@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import './style.css';
+import {useState} from 'react';
+import Login from './component/Login';
+import News from './component/News'
+
 
 function App() {
+  let [isLogin, setLogin] = useState(false);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {
+        isLogin
+        ? <News isLogin={isLogin} setLogin={setLogin}/>
+        : <Login isLogin={isLogin} setLogin={setLogin}/>
+      }
+     
     </div>
   );
 }
